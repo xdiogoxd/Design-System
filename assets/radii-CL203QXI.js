@@ -1,0 +1,4 @@
+import{j as t}from"./index-6S-cJZT5.js";import{useMDXComponents as r}from"./index-7_urXZbD.js";import"./index-DIsTQSC9.js";import{T as s}from"./TokensGrid-DttBLbsB.js";import{r as e}from"./index-DDpN8AM9.js";import{M as m}from"./DocsRenderer-CFRXHY34-CnfVDhdS.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-PxHYSiC3.js";import"./index-CdUicJsP.js";import"./preview-Cw_LmtcB.js";import"./iframe-D-sX5ivs.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";import"./react-18-DroeUvO3.js";function n(o){const i={h1:"h1",p:"p",...r(),...o.components};return t.jsxs(t.Fragment,{children:[t.jsx(m,{title:"Tokens/Radii",description:"Radii tokens"}),`
+`,t.jsx(i.h1,{id:"radii",children:"Radii"}),`
+`,t.jsx(i.p,{children:"Esses são os espaçamentos utilizados no Design System do Ignite UI."}),`
+`,t.jsx(s,{tokens:e})]})}function g(o={}){const{wrapper:i}={...r(),...o.components};return i?t.jsx(i,{...o,children:t.jsx(n,{...o})}):n(o)}export{g as default};

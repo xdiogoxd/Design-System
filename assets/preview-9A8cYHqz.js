@@ -1,0 +1,1 @@
+const a={tags:["autodocs"],parameters:{controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}},backgrounds:{default:"dark",values:[{name:"light",value:"#f8f8f8"},{name:"dark",value:"#333333"},{name:"custom",value:"#yourColorHex"}]}}};export{a as default};
