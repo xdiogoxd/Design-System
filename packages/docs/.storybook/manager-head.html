@@ -1,4 +1,19 @@
 <script>
   // Ensure proper base URL for assets
   window.STORYBOOK_BASE_URL = '/Design-System/';
+
+  // Add this to help with path resolution
+  document.addEventListener('DOMContentLoaded', function () {
+    const baseUrl = window.STORYBOOK_BASE_URL || '/';
+    const linkTags = document.querySelectorAll(
+      'link[rel="shortcut icon"], link[rel="icon"]'
+    );
+
+    linkTags.forEach((link) => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('/') && !href.startsWith(baseUrl)) {
+        link.setAttribute('href', baseUrl + href.substring(1));
+      }
+    });
+  });
 </script>
