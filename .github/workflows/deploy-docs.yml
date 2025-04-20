@@ -21,6 +21,9 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          TURBO_TOKEN: NDNoz1LxIGmvoNv4Sbnv0UuN
+          TURBO_TEAM: diogos-projects-b0682d0d
 
       - name: Deploy storybook
         working-directory: ./packages/docs
