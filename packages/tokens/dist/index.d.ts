@@ -15,6 +15,7 @@ declare const colors: {
     red300: string;
     red500: string;
     red700: string;
+    red900: string;
     yellow300: string;
     yellow500: string;
     yellow700: string;

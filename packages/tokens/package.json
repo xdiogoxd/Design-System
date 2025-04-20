@@ -1,6 +1,6 @@
 {
   "name": "@xdiogoxd-ui/tokens",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Tokens shared between Ignite UI's components",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
