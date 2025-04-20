@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages --ci --existing-output-dir=storybook-static --source-branch=main --host-token-env-variable=GH_TOKEN"
   },
   "dependencies": {
     "@ignite-ui/eslint-config": "*",
