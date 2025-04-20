@@ -15,11 +15,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - run: npm ci
 
-      - run: npm run build
+      - name: Build
+        run: npm run build
+        env:
+          NODE_OPTIONS: --experimental-vm-modules
 
       - name: Deploy storybook
         working-directory: ./packages/docs
