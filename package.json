@@ -6,9 +6,13 @@
   "packageManager": "npm@8.19.3",
   "scripts": {
     "dev": "turbo run dev --parallel",
-    "build": "turbo run build --parallel"
+    "build": "turbo run build --parallel",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "turbo run build --filter=!@xdiogoxd-ui/docs && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.2",
     "turbo": "^2.5.0"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/tokens",
+  "name": "@xdiogoxd-ui/tokens",
   "version": "1.0.0",
   "description": "Tokens shared between Ignite UI's components",
   "main": "./dist/index.js",
@@ -15,8 +15,8 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@ignite-ui/ts-config": "*",
-    "@ignite-ui/eslint-config": "*",
+    "@xdiogoxd-ui/ts-config": "*",
+    "@xdiogoxd-ui/eslint-config": "*",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
   }
