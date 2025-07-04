@@ -1,5 +1,5 @@
-import { styled } from '../../styles';
 import * as Avatar from '@radix-ui/react-avatar';
+import { styled } from '../../styles';
 
 export const AvatarContainer = styled(Avatar.Root, {
   borderRadius: '$full',
@@ -23,7 +23,7 @@ export const AvatarFallback = styled(Avatar.Fallback, {
   alignItems: 'center',
   justifyContent: 'center',
   backgroundColor: '$gray600',
-  color: '$$gray800',
+  color: '$gray800',
 
   svg: {
     width: '$6',

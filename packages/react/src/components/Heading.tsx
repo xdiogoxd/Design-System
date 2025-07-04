@@ -1,4 +1,4 @@
-import { ComponentProps, ElementType, ReactNode } from 'react';
+import { ComponentProps, ElementType } from 'react';
 import { styled } from '../styles';
 
 export const Heading = styled('h2', {
@@ -12,8 +12,7 @@ export const Heading = styled('h2', {
       sm: { fontSize: '$xl' },
       md: { fontSize: '$2xl' },
       lg: { fontSize: '$4xl' },
-      xl: { fontSize: '$5xl' },
-      '2xl': { fontSize: '$6xl' },
+      '2xl': { fontSize: '$5xl' },
       '3xl': { fontSize: '$6xl' },
       '4xl': { fontSize: '$7xl' },
       '5xl': { fontSize: '$8xl' },
@@ -27,8 +26,6 @@ export const Heading = styled('h2', {
 });
 
 export interface HeadingProps extends ComponentProps<typeof Heading> {
-  children: ReactNode;
-  variants?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '4xl' | '5xl' | '6xl';
   as?: ElementType;
 }
 

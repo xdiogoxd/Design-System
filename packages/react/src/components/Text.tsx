@@ -1,4 +1,4 @@
-import { ComponentProps, ElementType, ReactNode } from 'react';
+import { ComponentProps, ElementType } from 'react';
 import { styled } from '../styles';
 
 export const Text = styled('p', {
@@ -16,7 +16,6 @@ export const Text = styled('p', {
       lg: { fontSize: '$lg' },
       xl: { fontSize: '$xl' },
       '2xl': { fontSize: '$2xl' },
-      '3xl': { fontSize: '$3xl' },
       '4xl': { fontSize: '$4xl' },
       '5xl': { fontSize: '$5xl' },
       '6xl': { fontSize: '$6xl' },
@@ -32,23 +31,6 @@ export const Text = styled('p', {
 });
 
 export interface TextProps extends ComponentProps<typeof Text> {
-  size?:
-    | 'xxs'
-    | 'xs'
-    | 'sm'
-    | 'md'
-    | 'lg'
-    | 'xl'
-    | '2xl'
-    | '3xl'
-    | '4xl'
-    | '5xl'
-    | '6xl'
-    | '7xl'
-    | '8xl'
-    | '9xl';
-
-  children: ReactNode;
   as?: ElementType;
 }
 

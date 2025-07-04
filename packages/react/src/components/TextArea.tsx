@@ -5,23 +5,19 @@ export const TextArea = styled('textarea', {
   backgroundColor: '$gray900',
   padding: '$3 $4',
   borderRadius: '$sm',
-  TextAreaSizing: 'border-TextArea',
+  boxSizing: 'border-box',
   border: '2px solid $gray900',
 
   fontFamily: '$default',
-  fontWeight: '$regular',
   fontSize: '$sm',
   color: '$white',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-
+  fontWeight: '$regular',
   resize: 'vertical',
   minHeight: 80,
 
   '&:focus': {
     outline: 0,
-    borderColor: '$green300',
+    borderColor: '$ignite300',
   },
 
   '&:disabled': {

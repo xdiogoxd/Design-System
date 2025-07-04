@@ -1,4 +1,4 @@
-import React, { ComponentProps } from 'react';
+import React from 'react';
 import { Label, MultiStepContainer, Step, Steps } from './styles';
 
 export interface MultiStepProps {
@@ -6,12 +6,13 @@ export interface MultiStepProps {
   currentStep?: number;
 }
 
-export function MultiStep({ size, currentStep = 1, ...props }: MultiStepProps) {
+export function MultiStep({ size, currentStep = 1 }: MultiStepProps) {
   return (
     <MultiStepContainer>
       <Label>
         Passo {currentStep} de {size}
       </Label>
+
       <Steps css={{ '--steps-size': size }}>
         {Array.from({ length: size }, (_, i) => i + 1).map((step) => {
           return <Step key={step} active={currentStep >= step} />;
